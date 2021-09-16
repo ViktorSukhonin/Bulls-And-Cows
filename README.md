@@ -4,7 +4,6 @@
 \
 Для этого скачиваете папку с иходным кодом, открываете её в intellij idea, выполняя trust project, в правом верхнем углу нажимете на вкладку gradle, нажимаете Tasks -> build -> build, после чего код скомпилируется, затем Tasks -> application -> run, чтобы запустить приложение. 
 ***
-![image](https://user-images.githubusercontent.com/81764092/133647450-f1b1fc60-ecb4-4e60-a569-f1afc5f7c2f7.png)
 ![image](https://user-images.githubusercontent.com/81764092/133647179-0bf17464-d098-432a-81e4-fde72540405e.png)
 ***
 Пара слов о самом приложении.\
