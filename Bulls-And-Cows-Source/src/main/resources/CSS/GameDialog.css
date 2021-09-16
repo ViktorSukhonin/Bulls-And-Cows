@@ -1,0 +1,41 @@
+.root {
+    -fx-background-color: #FFFFF0;
+    -fx-font-family: "Bradley Hand";
+    -fx-font-size: 14px;
+}
+
+.menu-bar {
+    -fx-background-radius: 10px;
+    -fx-background-color: #E6E6FA;
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-padding: 5px;
+    -fx-font-size: 17px;
+}
+
+.menu-bar .menu-button:hover, .menu-bar .menu-button:focused,
+.menu-bar .menu-button:showing, .menu-item:hover, .menu-item:showing, .menu-item:focused {
+    -fx-background-radius: 7px;
+    -fx-background: #4B0082;
+    -fx-text-fill: white;
+    -fx-font-size: 17px;
+}
+
+.editgroupe {
+    -fx-font: bold 19pt "Arial";
+    -fx-text-fill: #483D8B;
+}
+
+.button {
+    -fx-background-radius: 5px;
+    -fx-text-fill: #ffffff;
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #6A5ACD 0%, #483D8B 100%);
+}
+
+.button .text {
+    -fx-font: bold 17pt "Georgia";
+}
+
+.text-field {
+    -fx-font: 17pt "Arial";
+}

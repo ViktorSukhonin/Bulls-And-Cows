@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import java.net.URL?>
+<?import javafx.scene.control.TextField?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="lab4.PVE.InputNumberPVEDialog"
+      prefHeight="240" prefWidth="400" spacing="15" alignment="CENTER">
+    <padding>
+        <Insets bottom="25" left="25" right="25" top="25"/>
+    </padding>
+    <MenuBar>
+        <Menu text="Exit to menu">
+            <MenuItem text="Exit to menu" onAction="#createExit"/>
+        </Menu>
+        <Menu text="Help">
+            <MenuItem text="Help" onAction="#createHelp"/>
+        </Menu>
+    </MenuBar>
+    <VBox spacing="15" alignment="CENTER">
+        <Label fx:id="title" text="Enter your four-digit number" alignment="CENTER"/>
+        <TextField fx:id="tf" maxWidth="200" prefHeight="50" alignment="CENTER"/>
+        <Button onAction="#createBtnOk" prefWidth="100" prefHeight="50" text="OK" alignment="CENTER"/>
+    </VBox>
+    <stylesheets>
+        <URL value="@/CSS/InputNumberPVEDialog.css"/>
+    </stylesheets>
+</VBox>

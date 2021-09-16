@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.geometry.Insets?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="lab4.ViewGame"
+      prefHeight="300" prefWidth="310" spacing="15" alignment="CENTER">
+    <padding>
+        <Insets bottom="25" left="25" right="25" top="25"/>
+    </padding>
+    <MenuBar>
+        <Menu text="File">
+            <MenuItem text="Information" onAction="#createInformation"/>
+            <MenuItem text="Exit" onAction="#createExit"/>
+        </Menu>
+        <Menu text="Help">
+            <MenuItem text="Help" onAction="#createHelp"/>
+        </Menu>
+    </MenuBar>
+    <VBox spacing="15" alignment="CENTER">
+        <Label fx:id="title" text="MODES" alignment="CENTER"/>
+        <Button onAction="#createBtnPVEEasy" prefWidth="200" prefHeight="50" text="Player vs Easy AI" alignment="CENTER"/>
+        <Button onAction="#createBtnPVEHard" prefWidth="200" prefHeight="50" text="Player vs Hard AI" alignment="CENTER"/>
+        <Button onAction="#createBtnPVP" prefWidth="200" prefHeight="50" text="Player vs Player" alignment="CENTER"/>
+    </VBox>
+</VBox>

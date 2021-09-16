@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<?import java.net.URL?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="lab4.PVE.WinPVE"
+      prefHeight="300" prefWidth="430" spacing="15" alignment="CENTER">
+    <padding>
+        <Insets bottom="25" left="25" right="25" top="25"/>
+    </padding>
+    <VBox spacing="15" alignment="CENTER">
+        <HBox spacing="30" alignment="CENTER">
+            <VBox spacing="15" alignment="CENTER">
+                <Label styleClass="editgroupe" text="Number of you" alignment="CENTER"/>
+                <Label styleClass="groupe" fx:id="number1" alignment="CENTER"/>
+            </VBox>
+            <VBox spacing="15" alignment="CENTER">
+                <Label styleClass="editgroupe" text="Number of AI" alignment="CENTER"/>
+                <Label styleClass="groupe" fx:id="number2" alignment="CENTER"/>
+            </VBox>
+        </HBox>
+        <Label styleClass="editgroupe" fx:id="playerWin" alignment="CENTER"/>
+        <Button onAction="#createBtnNewGame" prefWidth="250" text="NEW GAME" alignment="CENTER"/>
+        <Button onAction="#createBtnExitMenu" prefWidth="250" text="EXIT TO MENU" alignment="CENTER"/>
+    </VBox>
+    <stylesheets>
+        <URL value="@/CSS/Win.css"/>
+    </stylesheets>
+</VBox>
